@@ -76,26 +76,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="shopping-section">
-                    <div class="private-info">
-                        <form class="contact-form">
-                            <label for="name">Your name</label>
-                            <input type="text" style="display:block" name="name">
-                        </form>
-                        <form class="contact-form">
-                            <label for="email">Your email</label>
-                            <input type="text" style="display:block" name="email">
-                        </form>
-                    </div>
-                    <div class="purchase-section">
-                        <div class="price">
-                            <strong>4.76$</strong>
+                <div class="shopping-section" id="shopping-block">
+                    <div id="pre-purchase-block">
+                        <div class="private-info">
+                            <form class="contact-form">
+                                <label for="name">Your name</label>
+                                <input type="text" class="username" id="user-name" style="display:block" name="name">
+                            </form>
+                            <form class="contact-form">
+                                <label for="email">Your email</label>
+                                <input type="text" id="e-mail" style="display:block" name="email">
+                            </form>
                         </div>
-                        <div class="purchase-button">
-                            <button class="purchase-game-button">
-                                <img class="cart-image" src="images/buy-btn.jpg">
-                                <div class="purchase-text"> <strong>purchase</strong></div>
-                            </button>
+                        <div class="purchase-section">
+                            <div class="price">
+                                <strong>4.76$</strong>
+                            </div>
+                            <div class="purchase-button">
+                                <button type="submit" class="purchase-game-button" id="purchase-game">
+                                    <img class="cart-image" src="images/buy-btn.jpg">
+                                    <div class="purchase-text"> <strong>purchase</strong></div>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,11 +149,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="comments">
+                <div class="comments" id="comment-field">
                     <div class="title">
                         <h3>Comments</h3> 
                     </div>
-                    <div class="comment">
+                    <div class="comment" id="all-comments">
                         <div class="comment-data">
                             <div class="username"><strong>John</strong></div>
                             <div class="date-time">23.04.2021 11:59</div>
@@ -175,15 +177,17 @@
                         </div>
                     </div>
                     <div class="add-comment-block">
-                        <form class="comment-form" id="your-comment">
-                            <textarea name="comment-area" placeholder="Write your comment..."></textarea>
+                        <form class="comment-form">
+                            <textarea name="comment-area" id="comment-body" placeholder="Write your comment..."></textarea>
                         </form>
-                        <button class="submit-comment-button">
+                        <button type="submit" id="add-comment" class="submit-comment-button">
                             <div class="submit-text"> <strong>Submit</strong></div>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="scripts/CreateComment.js"></script>
+        <script src="scripts/PurchaseGame.js"></script>
     </body>
 </html>
