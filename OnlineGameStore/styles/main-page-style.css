@@ -1,0 +1,41 @@
+html{
+    background-color:#d9d9d9;
+    font-family: Play,Arial,sans-serif;
+    font-size: 14px;
+    margin-left: 20px; 
+}
+.items{
+    padding-left: 1px;
+    display: flex;
+}
+.game-block{
+    display: block;
+    margin-top: 10px;
+    width: 270px;
+    height: 500px;
+    margin-right: auto;
+    border-left: 2px solid rgb(172, 170, 170); 
+    padding-left: 10px;
+    transition: 0.5s;
+}
+img.image{
+    display: block;
+    padding-top: 30px;
+    width: 228px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.game-name, .price, .short-disc{
+    padding-left: 20px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.game-block:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    transform: scale(1.05);
+    background-color:#d9d9d9;
+}

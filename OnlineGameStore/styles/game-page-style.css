@@ -1,0 +1,158 @@
+html{
+    font-family: Play,Arial,sans-serif;
+    background-color:#d9d9d9;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.content{
+    display: flex;
+}
+.content-left{
+    width: 400px;
+}
+.content-right{
+    margin-left: 100px;
+    width: 650px;
+}
+.game-image{
+    display: block;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+img.image{
+    display: block;
+    width: 400px;
+    transition: 1s;
+}
+.gradient{
+    font-family: Play,Arial,sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(0deg,rgba(0,0,0,.9) 10%,rgba(0,0,0,.6) 35%,hsla(0,0%,100%,0) 95%);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: yellow;
+    padding-top: 120px;
+    transition: color .3s ease;
+}
+.trailer-logo{
+    content: "";
+    position: absolute;
+    width: 165%;
+    top: 100%;
+    fill-rule: evenodd;
+    fill: #ff793a; 
+    text-align: center;
+    opacity:0;
+    transition: 0.5s;
+}
+.title{
+    border-bottom: 2px solid rgb(172, 170, 170);
+}
+.categories{
+    margin-top: 20px;
+}
+.category{
+    padding-top: 10px;
+    display: flex;
+}
+.category-name{
+    width: 40%;
+}
+.shopping-section{
+    padding-top: 30px;
+    display: flex;
+}
+#pre-purchase-block{
+    display: flex;
+}
+.purchase-section{
+    padding-left: 80px;
+    padding-top: 15px;
+}
+.purchase-text{                                
+    padding-top: 3px;                          
+    font-size: 13px;                         
+    color: white;
+    text-transform: uppercase;
+}
+.purchase-game-button{
+    width: 150px;
+    border-radius: 4px;
+    background-color: darkslategrey;
+    transition:0.4s;
+}
+.thankful-message{
+    display: flex;
+}
+.price{
+    font-size: 25px;
+}
+input[type=text]{
+    height: 20px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    resize: none;
+}
+.add-comment-block{
+    padding-top: 20px;
+}
+.comment-form{
+    height: 160px;
+}
+.username-form{
+    width: 80px;
+}
+.submit-comment-button{
+    width: 80px;
+    height: 28px;
+    color: white;
+    border-radius: 4px;
+    background-color: darkslategrey;
+    transition:0.4s;
+}
+.cart-image{
+    float: left;
+    padding-left: 20px;
+}
+.comment-data{
+    display: flex;
+    width: 350px;
+}
+.date-time{
+    padding-left: 30px;
+}
+.comment-data{
+    padding-top: 20px;
+}
+.comment-content{
+    padding: 10px;
+}
+.game-image:hover img{
+    transform: scale(1.07);
+}
+.game-image:hover .gradient{
+    color: #ff793a;
+}
+.game-image:hover .trailer-logo{
+    opacity:1;
+    top: 75%;
+}
+.purchase-game-button:hover{
+    background-color: orangered;
+}
+.submit-comment-button:hover{
+    background-color: orangered;
+}

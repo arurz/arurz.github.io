@@ -1,0 +1,2 @@
+add node.js server side
+connect to MongoDB
